@@ -5,21 +5,21 @@
 class Keytographer < Formula
   desc "Beautiful keymap visualizations"
   homepage "https://github.com/chdorner/keytographer"
-  version "0.1.0-alpha.2"
+  version "0.1.0-alpha.1"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.2/keytographer_0.1.0-alpha.2_Darwin_x86_64.tar.gz"
-      sha256 "3d2381f92bf166356d4eefadc7fba40582c5cc28e0db18423b6318b871afac3c"
+      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Darwin_x86_64.tar.gz"
+      sha256 "b485b4bca70bfa76275c6221611519f38b63e1924ae5dcc4382b07ca2a20f6f6"
 
       def install
         bin.install "keytographer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.2/keytographer_0.1.0-alpha.2_Darwin_arm64.tar.gz"
-      sha256 "caab2869123ccfad1b19a18a43caa34184139d3c1465e80e126c1622bb05ed9c"
+      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Darwin_arm64.tar.gz"
+      sha256 "c8e5b190857745fc04527aa085a87bc63953ee45770ff89c5644a722d40b5f3e"
 
       def install
         bin.install "keytographer"
@@ -29,16 +29,16 @@ class Keytographer < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.2/keytographer_0.1.0-alpha.2_Linux_arm64.tar.gz"
-      sha256 "8e2fa065e8e60364e7a5aed283081f8364fc7c0afaf754cab970b8d15b0aec12"
+      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Linux_arm64.tar.gz"
+      sha256 "aa14f27003c833eb7c558bc1c64284110c570b1e0161ed41a3a40bc9570af6ff"
 
       def install
         bin.install "keytographer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.2/keytographer_0.1.0-alpha.2_Linux_x86_64.tar.gz"
-      sha256 "13ea66f519df10c759ddf11562c4eef1c455923b36da68d73a8f7acbac22248a"
+      url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Linux_x86_64.tar.gz"
+      sha256 "c940b1795335db385833d742740ee3304441a32da2a46a8b89a6375bead0e3ec"
 
       def install
         bin.install "keytographer"
