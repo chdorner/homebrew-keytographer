@@ -6,12 +6,12 @@ class Keytographer < Formula
   desc "Beautiful keymap visualizations"
   homepage "https://github.com/chdorner/keytographer"
   version "0.1.0-alpha.1"
-  license "GPL-3.0"
+  license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Darwin_x86_64.tar.gz"
-      sha256 "b485b4bca70bfa76275c6221611519f38b63e1924ae5dcc4382b07ca2a20f6f6"
+      sha256 "5bb73c6c025eb10de9da1423693d4319ea785b4bd4a8be24fd7c73a2e309fcb8"
 
       def install
         bin.install "keytographer"
@@ -19,7 +19,7 @@ class Keytographer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Darwin_arm64.tar.gz"
-      sha256 "c8e5b190857745fc04527aa085a87bc63953ee45770ff89c5644a722d40b5f3e"
+      sha256 "14d47121b1a27c08771f6fe07325ee4ddae491c3b8398933aa310cc6ab99c09d"
 
       def install
         bin.install "keytographer"
@@ -30,7 +30,7 @@ class Keytographer < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Linux_arm64.tar.gz"
-      sha256 "aa14f27003c833eb7c558bc1c64284110c570b1e0161ed41a3a40bc9570af6ff"
+      sha256 "ef591584b4b616b21c8e78ec8e20e2240ab2a80a1e5135a18e2d15053e7ba774"
 
       def install
         bin.install "keytographer"
@@ -38,7 +38,7 @@ class Keytographer < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/chdorner/keytographer/releases/download/v0.1.0-alpha.1/keytographer_0.1.0-alpha.1_Linux_x86_64.tar.gz"
-      sha256 "c940b1795335db385833d742740ee3304441a32da2a46a8b89a6375bead0e3ec"
+      sha256 "bee7a2db5145499efd40c3316e7e8ccf530102b071e811edb92f36667ccc7e58"
 
       def install
         bin.install "keytographer"
